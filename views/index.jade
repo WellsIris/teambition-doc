@@ -1,0 +1,14 @@
+extends layout
+
+block content
+	header
+		h1= title
+	section
+		div#left
+			div#left_title Document List
+				div#left_toggle.btn <
+			div#left_body
+			div#left_bottom
+				div#create_doc.btn Create new document
+		div#right
+	script(src='../javascripts/libs/require/require.js',data-main='../javascripts/main')

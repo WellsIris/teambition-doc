@@ -1,0 +1,109 @@
+// *********************glo*********************//
+html
+    height 100%
+body,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,form,p,hr
+    margin 0
+body
+    // background url(../images/texture.png) 0 0 repeat
+    background-color #fff
+    height 100%
+a img 
+    border none
+a
+    text-decoration none
+em,var 
+    font-style normal
+ul,ol 
+    padding 0
+    list-style-type none
+body,td,th,h1,h2,h3,h4,h5,h6
+    font-size 12px
+    font-family "Microsoft yahei",Arial,SimSun,sans-serif
+    font-style normal
+    font-weight 100
+.fix:after
+    content '.'
+    display block
+    clear both
+    visibility hidden
+    height 0
+.fix
+    zoom 1
+input,textarea,a,button
+    zoom 1
+    outline 0
+input::-moz-focus-inner
+    border none
+input,textarea,button
+    border 0 none
+    background #fff
+.btn
+    background rgb(250,250,249)
+    border 1px solid #fff
+    text-align center
+    border-bottom 1px solid #ccc
+    border-radius 4px
+.btn:hover
+    cursor pointer
+.btn:active
+    background #ddd
+    border 1px solid #ccc
+    color #fff
+// *********************header*********************//
+header
+    display block
+    text-align center
+    height 3%
+    min-height 20px
+    border-bottom 1px solid #999
+    background -webkit-gradient(linear, 0 0, 0 100%, from(#ddd), to(#bbb))
+    background -moz-linear-gradient(top, #ddd, #bbb)
+    h1
+        height 100%
+        font-size 14px
+        text-shadow 0 1px 1px #eee
+        -moz-text-shadow 0 1px 1px #eee
+        -webkit-text-shadow 0 1px 1px #eee
+
+// *********************body*********************//
+section
+    height 96.5%
+    #left
+        float left
+        width 20%
+        min-width 200px
+        height 100%
+        border-right 2px solid #ddd
+        background-color #eee
+        overflow auto
+        box-shadow 1px 0 2px rgba(160,160,160,0.8)
+        #left_title
+            text-align center
+            font-size 14px
+            height 4%
+            min-height 30px
+            line-height 30px
+            border-bottom 1px dashed #ccc
+            #left_toggle
+                float right
+                line-height 25px
+                height 25px
+                width 25px
+                margin-right 1px
+                margin-top 2px
+        #left_body
+            height auto
+            margin 5px auto
+        #left_bottom
+            height 40px
+            width 100%
+            #create_doc
+                margin 0 auto
+                width 90%
+                height 100%
+                line-height 40px
+    #right
+        float left
+        width 78%
+        height 100%
+        overflow auto
