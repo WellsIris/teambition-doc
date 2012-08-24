@@ -6,10 +6,15 @@ require.config({
 		underscore 	: 'libs/underscore/underscore-min',
 		backbone 	: 'libs/backbone/backbone-optamd3-min',
 		text 		: 'libs/require/text',
+		doT			: 'libs/doT/doT',
 		//major
 		app 		: 'src/app',
+		//model
+		docModel	: 'src/models/doc',
 		//views
-		doc 		: 'src/views/doc'
+		docView		: 'src/views/doc',
+		//Collection
+		docs		: 'src/collections/docs'
 	}
 });
 
