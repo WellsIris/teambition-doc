@@ -50,15 +50,15 @@ h6 {
   font-style: normal;
   font-weight: 100;
 }
-.fix:after {
+.fix {
+  zoom: 1;
+}
+.fix :after {
   content: '.';
   display: block;
   clear: both;
   visibility: hidden;
   height: 0;
-}
-.fix {
-  zoom: 1;
 }
 input,
 textarea,
@@ -77,16 +77,17 @@ button {
   background: #fff;
 }
 .btn {
+  display: block;
   background: #fafaf9;
   border: 1px solid #fff;
   text-align: center;
   border-bottom: 1px solid #ccc;
   border-radius: 4px;
 }
-.btn:hover {
+.btn :hover {
   cursor: pointer;
 }
-.btn:active {
+.btn :active {
   background: #ddd;
   border: 1px solid #ccc;
   color: #fff;
@@ -94,11 +95,11 @@ button {
 header {
   display: block;
   text-align: center;
-  height: 3%;
-  min-height: 20px;
+  height: 22px;
   border-bottom: 1px solid #999;
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#ddd), to(#bbb));
   background: -moz-linear-gradient(top, #ddd, #bbb);
+  background: -ms-linear-gradient(top, #ddd, #bbb);
 }
 header h1 {
   height: 100%;
@@ -108,16 +109,17 @@ header h1 {
   -webkit-text-shadow: 0 1px 1px #eee;
 }
 section {
-  height: 96.5%;
+  height: 97.5%;
 }
 section #left {
   float: left;
-  width: 20%;
-  min-width: 200px;
+  width: 15%;
+  min-width: 150px;
   height: 100%;
   border-right: 2px solid #ddd;
   background-color: #eee;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   box-shadow: 1px 0 2px rgba(160,160,160,0.8);
 }
 section #left #left_title {
@@ -127,14 +129,6 @@ section #left #left_title {
   min-height: 30px;
   line-height: 30px;
   border-bottom: 1px dashed #ccc;
-}
-section #left #left_title #left_toggle {
-  float: right;
-  line-height: 25px;
-  height: 25px;
-  width: 25px;
-  margin-right: 1px;
-  margin-top: 2px;
 }
 section #left #left_body {
   height: auto;
@@ -149,10 +143,14 @@ section #left #left_bottom #create_doc {
   width: 90%;
   height: 100%;
   line-height: 40px;
+  cursor: pointer;
+}
+section #left #left_bottom #create_doc :hover {
+  text-shadow: 0 0 5px #fff;
 }
 section #right {
   float: left;
-  width: 78%;
+  width: 75%;
   height: 100%;
   overflow: auto;
 }

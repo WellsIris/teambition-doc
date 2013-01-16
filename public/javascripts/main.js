@@ -12,6 +12,7 @@ require.config({
 		//model
 		docModel	: 'src/models/doc',
 		//views
+		siteView	: 'src/views/site',
 		docView		: 'src/views/doc',
 		//Collection
 		docs		: 'src/collections/docs'

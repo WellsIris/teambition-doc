@@ -1,26 +1,16 @@
-define([
-    'jquery',
-    'underscore',
-    'backbone'
-], function ($, _, Backbone){
-        var DocView = Backbone.View.extend({
-        el: $('#left'),
-        tagName:"div",
-        initialize:function(model){
-            console.log(model);
+define(['jquery','underscore','backbone','docModel'], function ($,_,Backbone,docModel){
+    var DocView = Backbone.View.extend({
+        el      : $('#left'),
+        tagName : 'section',
+        initialize:function(docModel){
+            // console.log(docModel);
         },
         events: {
-            "click #create_doc"      : "createDoc",
-            "click #left_toggle"     : "toggle"
+            "click #create_doc"      : "createDoc"
         },
         createDoc: function(){
-            console.log('Click doc.btn_createDoc');
-            
-        },
-        toggle: function(){
-            console.log('tiggle is invoke');
+            console.log('Click doc.btn_createDoc');            
         }
     });
     return DocView;
 });
-

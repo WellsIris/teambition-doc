@@ -5,6 +5,6 @@
 
 exports.index = function(req,res){
 	res.render('index',{
-		title:'Teambition-Doc-System'
+		title:'Adways-node-demo'
 	});
 };

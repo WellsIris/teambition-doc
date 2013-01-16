@@ -3,7 +3,7 @@ define(['jquery','underscore','backbone','docModel'
 	var DocCollection = Backbone.Collection.extend({
 	    model:docModel,
 		docsperpage:10,
-		url:'/docs',		
+		url:'/docs',	
 	});
 	return DocCollection;
 });
